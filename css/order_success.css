@@ -1,0 +1,31 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    background-color: rgba(226, 186, 190, 0.9);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 50px;
+}
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    display: inline-block;
+}
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+.button:hover {
+    background-color: #0056b3;
+}

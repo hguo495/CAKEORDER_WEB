@@ -1,0 +1,497 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* background-color: #ebccbd;*/
+   background-color: rgba(226, 186, 190, 0.9); /* Semi-transparent background */
+}
+
+/* Header Styles */
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #e2babe;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #000; /* Ensure header text is visible */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+   /* background-color: #e2babe;*/
+    background-color: rgba(226, 186, 190, 0.9); /* Semi-transparent background */
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: #dccdf0;
+}
+
+/* Index Page: Cake Grid */
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+.cake-item {
+    background-color: #e2babe;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cake-item:hover {
+    transform: scale(1.05);
+}
+
+.cake-item img {
+    width: 80%;
+    height: 400px; /* Ensures all images are the same size */
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.cake-item h2 {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: rgb(9, 9, 9);
+    text-decoration: none;
+}
+
+.cake-item:hover h2 {
+    text-decoration: underline; 
+    color: #070707; 
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px); /* Subtract the height of header and nav */
+    background-image: url('images/home-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+/* Vintage Page: Cake Details */
+.cake-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cake-details .main-image {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.thumbnail-gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail-gallery img:hover {
+    transform: scale(1.1);
+}
+#priceDisplay {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Order Section */
+.cake-order {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.cake-order h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cake-order label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.cake-order select,
+.cake-order textarea,
+.cake-order button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cake-order button {
+    background-color: #dccdf0;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cake-order button:hover {
+    background-color: #b5a8d3;
+}
+#quote {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #dccdf0;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline for <a> */
+    display: block; /* Ensures it behaves like a block-level button */
+    text-align: center; /* Center-align text */
+}
+
+#quote:hover {
+    background-color: #b5a8d3;
+}
+
+/* Footer Styles */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #e2babe;
+    border-top: 1px solid #ccc;
+    font-size: 0.8rem;
+}
+
+/*search form */
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%; /* Adjust width as needed */
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #dccdf0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b5a8d3;
+}
+
+/* This rule targets all links within forms, removing the underline */
+form a {
+    text-decoration: none;
+    color:#000;
+}
+/* Hover effect for the button */
+form a button:hover {
+    background-color: #e2e2e2; /* Slightly darker on hover */
+}
+
+/* register error messages */
+input, label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.warning {
+    color: red;
+    font-size: 0.8em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e2e2e2;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Report Section Styling */
+section.report {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.report h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+
+table.report-table th, table.report-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table.report-table th {
+    background-color: #e2babe;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+a.return-home {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #a1f0a5;;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a.return-home:hover {
+    background-color: #a1f0a5;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Body: Adjust margins and padding for smaller screens */
+    body {
+        padding: 10px;
+    }
+
+    /* Header: Center-align content and reduce padding */
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Navbar: Stack items vertically for better readability */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    /* Cake Grid: Switch to a single-column or two-column layout */
+    .cake-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    }
+
+    /* Cake Details: Reduce image and thumbnail sizes */
+    .cake-details .main-image {
+        height: 300px; /* Reduce height for smaller screens */
+    }
+
+    .thumbnail-gallery img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Order Section: Adjust layout and reduce padding */
+    .cake-order {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .cake-order select,
+    .cake-order textarea,
+    .cake-order button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #priceDisplay {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+
+    /* Footer: Reduce font size and padding */
+    footer {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Cake Grid: Single-column layout for small screens */
+    .cake-grid {
+        grid-template-columns: 1fr; /* One item per row */
+    }
+
+    /* Welcome Section: Center-align text and adjust spacing */
+    .welcome-section {
+        height: auto; /* Adjust height to fit content */
+        padding: 15px;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .welcome-section p {
+        font-size: 0.9rem;
+    }
+
+    /* Cake Item: Adjust font size and padding */
+    .cake-item {
+        padding: 10px;
+    }
+
+    .cake-item h2 {
+        font-size: 0.9rem;
+    }
+
+    /* Thumbnail Gallery: Reduce spacing further */
+    .thumbnail-gallery img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Order Section: Ensure fields are full-width and aligned */
+    .cake-order select,
+    .cake-order textarea,
+    .cake-order button {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .cake-order button {
+        font-size: 0.9rem;
+    }
+
+    #priceDisplay {
+        font-size: 1rem;
+    }
+
+    /* Navbar: Increase padding and reduce font size */
+    .navbar a {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    /* Footer: Adjust font size */
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
